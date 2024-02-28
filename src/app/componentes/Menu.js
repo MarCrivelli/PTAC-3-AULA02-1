@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Menu(){
     return(
-        <header>
+        <header className="">
             <h1>Menu</h1>
                 <nav>
                   <ul>
