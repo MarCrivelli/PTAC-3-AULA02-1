@@ -1,6 +1,6 @@
-
 import Menu from './componentes/Menu' 
-import Footer from './componentes/Footer' 
+import Footer from './componentes/Footer'
+import style from './style.css'
 
 export const metadata = {
   title: 'Create Next App',

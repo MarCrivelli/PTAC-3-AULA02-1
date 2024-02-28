@@ -1,0 +1,36 @@
+:root {
+    --color-neutral-0: #000;
+    --color-neutral-10: #bb00ff;
+    --color-neutral-30: #001a41;
+    --color-neutral-40: #ff00c8;
+
+}
+
+*{
+    font-family: 'arial';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+
+    footer{
+        width: 100%;
+        color: var(--color-neutral-30)
+    }
+
+    #conteudoDoFooter{
+        background-color: var(--color-neutral-30);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 3rem 3.5rem;
+    }
+
+    #itensDoFooter1 h1{
+        margin-bottom: 0.75rem;
+    }
+
+    #itensDoFooter2{
+        display: flex;
+        gap: 2rem;
+    }
+}
