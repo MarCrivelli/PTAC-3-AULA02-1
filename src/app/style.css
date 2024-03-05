@@ -1,9 +1,15 @@
 :root {
     --color-neutral-0: #000;
     --color-neutral-10: #bb00ff;
-    --color-neutral-30: #001a41;
+    --color-neutral-30: #252627;
     --color-neutral-40: #ff00c8;
     --color-neutral-50: #fff;
+    --color-neutral-60: #18191B;
+}
+
+html{
+    width: 100%;
+    height: 100%;
 }
 
     *{
@@ -14,9 +20,104 @@
     letter-spacing: 1px;
     }
 
+    /*CSS do Header*/
+    header{
+        background-color: var(--color-neutral-30);
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: row;
+        display: flex;
+        padding: 10px 0px 0px 10px;
+        border-bottom: 8px solid #25d366;
+    }
+
+    .h{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+            display: flex;
+            align-items: flex-end;
+            margin-left: 40px;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menu ul li{
+       padding: 5px 40px 0px 50px;
+       margin: 0px 10px 0px 60px;
+       color: #fff;
+       text-align: center;
+       font-size: 20px;
+       font-weight: bolder;
+       border-radius: 10px 10px 0px 0px;
+       transition: all 0.5s;
+       background-color: #25d366;
+    }
+
+    .menu ul li:hover{
+        padding: 15px 40px 0px 50px;
+        margin: -10px 10px 0px 60px;
+    }
+
+    /*Fim do CSS do Header*/
+   
+    /*CSS do "not-found"*/
+
+    .alinhamentoDoError{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 450px;
+    }
+
+    .alinhamentoDoError svg{
+        height: 65px;
+        width: 65px;
+    }
+
+    .alinhamentoDoError div p{
+        color: #ff2992;
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .alinhamentoDoError div{
+        padding: 10px;
+    }
+
+    /*Fim do CSS do "not-found"*/
+
+    /*CSS do meio*/
+
+    .abc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-height: 470px;
+     }
+
+    /*Fim do CSS do meio*/
+
+    /*CSS do footer*/
+
     footer{
         width: 100%;
-        color: var(--color-neutral-50)
+        color: var(--color-neutral-50);
+        position: fixed;
+        bottom: 0;
     }
 
     .iconeDoFooter{
@@ -40,6 +141,13 @@
         margin-top: 1.5rem;
     }
 
+    .agrupamentoDosIcones{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
     #footerSocialMedia .iconeDoFooter{
         display: flex;
         align-items: center;
@@ -49,6 +157,7 @@
         color: var(--color-neutral-50);
         border-radius: 50%;
         transition: all 0.4s;
+        margin: 0px 10px 0px 10px;
     }
 
     #footerSocialMedia .iconeDoFooter i{
@@ -57,6 +166,17 @@
 
     #footerSocialMedia .iconeDoFooter:hover{
         opacity: 0.8;
+    }
+
+    .iconeDoFooter svg{
+        transition: all 0.7s;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .iconeDoFooter svg:hover{
+        height: 5rem;
+        width: 5rem;
     }
     
     #instagram{
@@ -80,6 +200,17 @@
         flex-direction: column;
         gap: 0.25rem;
         list-style: none;
+        width: 400px;
+    }
+    footer h2{
+        padding: 0px 0px 9px 0px;
+        font-weight: bolder;
+    }
+
+    .footerList li{
+        display: flex;
+        justify-content: baseline;
+        padding: 1px 0px 0px 0px;
     }
 
     .footerList .footerLink{
@@ -103,10 +234,96 @@
     #inputGroup{
         display: flex;
         align-items: center;
-        background-color: var(--color-neutral-30);
+        background-color: var(--color-neutral-50);
         border-radius: 4px;
+        color: #000;
     }
 
     #inputGroup input{
         all: unset;
+        padding: 0.75rem;
+        width: 100%;
     }
+
+    #inputGroup button{
+       background-color: #ffffff;
+       border: none;
+       color: var(--color-neutral-0);
+       padding: 0px 1.25rem;
+       height: 100%;
+       border-radius: 0px 4px 4px 0px;
+       cursor: pointer;
+       transition: all 0.4s;
+    }
+
+    #inputGroup button:hover{
+        opacity: 0.8;
+    }
+
+    #inputGroup svg{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #footerCopyright{
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-neutral-60);
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    @media screen and (max-width: 1550px){
+        .footerContent{
+            grid-template-columns: repeat(1,1fr);
+            padding: 3rem 2rem;
+        }
+
+        #footerSocialMedia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1.5rem;
+        }
+
+        #footerContent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footerList li{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #imagem{
+            width: 10px;
+            background-color: rgb(224, 20, 20);
+            border-radius: 0px;
+        }
+
+        .alinhamentoDoError{
+            height: 100px;
+        }
+
+        .abc{
+            max-height: none;
+         }
+    }
+
+    @media screen and (max-width: 1581px){
+        .alinhamentoDoError{
+            max-height: 373px;
+        }
+        .abc{    
+            max-height: 373px;
+         }
+    }
+    /*Fim do CSS do footer*/
+    
+    
+    
+
+    
