@@ -18,7 +18,7 @@ export default function Menu(){
                       <Link style={{textDecoration: 'none', textAlign:'center'}} href="/">
                         <li>Início</li>
                       </Link>
-                      <Link style={{textDecoration: 'none', textAlign:'center'}} href="/registrar">
+                      <Link style={{textDecoration: 'none', textAlign:'center'}} href="/registro">
                         <li>Registro</li>
                       </Link>
                       <Link style={{textDecoration: 'none', textAlign:'center'}} href="/constatar">
