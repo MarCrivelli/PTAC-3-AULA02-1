@@ -11,12 +11,14 @@ export default function Footer(){
 
                   <div id="footerSocialMedia">
 
-                    <div style={{padding:'50px', display: 'block', height: '130px', width: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Image
-                        width={450}
-                        height={130}
-                        src="https://ead.ifms.edu.br/theme/moove/pix/moodle-logo-white.png"
-                      />
+                    <div style={{backgroundColor:'#F07C0F', borderRadius:'20px', padding:'50px', display: 'block', height: '130px', width: '460px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Link href="https://ead.ifms.edu.br">
+                        <Image
+                          width={390}
+                          height={120}
+                          src="https://ead.ifms.edu.br/theme/moove/pix/moodle-logo-white.png"
+                        />
+                      </Link>
                     </div>
                     
                     <div class="agrupamentoDosIcones">

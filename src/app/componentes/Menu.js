@@ -5,11 +5,13 @@ export default function Menu(){
         <header>
           <div className="container">
           <div style={{ backgroundColor: 'white', display: 'inline-block', border:'3px solid #25d366',borderRadius: '50%', height: '150px', width: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5px'}}>
-            <Image
-              width={100}
-              height={100}
-              src={"https://www.ifms.edu.br/marcaifms.png"}>
-            </Image>
+            <Link href="https://www.ifms.edu.br">
+              <Image
+                width={100}
+                height={100}
+                src={"https://www.ifms.edu.br/marcaifms.png"}>
+              </Image>
+            </Link>
           </div>
           
             <div className="menu">

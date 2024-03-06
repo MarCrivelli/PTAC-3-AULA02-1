@@ -1,6 +1,7 @@
 import Menu from './componentes/Menu';
 import Footer from './componentes/Footer';
 import style from './style.css';
+import Home from './componentes/Home';
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Menu/>
         <div className="abc">
           {children}
+          <Home/>
         </div>
         <Footer/>
       </body>
