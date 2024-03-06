@@ -4,7 +4,7 @@ export default function Menu(){
     return(
         <header>
           <div className="container">
-          <div style={{ backgroundColor: 'white', display: 'inline-block', border:'5px solid #25d366',borderRadius: '50%', height: '150px', width: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5px'}}>
+          <div style={{ backgroundColor: 'white', display: 'inline-block', border:'3px solid #25d366',borderRadius: '50%', height: '150px', width: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5px'}}>
             <Image
               width={100}
               height={100}
