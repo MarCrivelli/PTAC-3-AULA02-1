@@ -102,13 +102,22 @@ html{
 
     /*CSS do meio*/
 
-    .abc{
+    .paginaPadrao{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-height: 470px;
      }
+
+    .amor{
+        background-color: #bb00ff;
+        width: 100%;
+    }
+
+    .imagemRota{
+        width: 100px;
+        height: 100px;
+    }
 
     /*Fim do CSS do meio*/
 
@@ -129,7 +138,7 @@ html{
         background-color: var(--color-neutral-30);
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 3rem 3.5rem;
+        padding: .1rem 3.5rem;
     }
 
     #footerContacts h1{
@@ -309,29 +318,20 @@ html{
             height: 100px;
         }
 
-        .abc{
-            max-height: none;
+        .paginaPadrao{
+           display: flex;
+           align-items: end;
+           justify-content: end;
          }
     }
-
-    @media screen and (max-width: 1581px){
-        .alinhamentoDoError{
-            max-height: 373px;
-        }
-        .abc{    
-            max-height: 373px;
-         }
-    }
-
-    
-
 
     /*Fim do CSS do footer*/
     
     .mapa iframe{
-        width: 600px;
-        height: 340px;
-        margin-top: 30px;
+        width: 900px;
+        height: 640px;
+        margin: 20px 0px 400px 0px;
+        filter: drop-shadow(5px 5px 5px #344955);
     }
     
 

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         
         <Menu/>
-        <div className="abc">
+        <div className="paginaPadrao">
           {children}
           <Home/>
         </div>
