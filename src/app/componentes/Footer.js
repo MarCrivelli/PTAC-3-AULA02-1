@@ -56,8 +56,8 @@ export default function Footer(){
                       </li>
 
                       <li>
-                        <Link style={{textDecoration: 'none'}} class="footerLink" href="/mapa">
-                            <li>Caixa de e-mail</li>
+                        <Link style={{textDecoration: 'none'}} class="footerLink" href="/imagens">
+                            <li>Imagens do Campus</li>
                         </Link>
                       </li>
                       

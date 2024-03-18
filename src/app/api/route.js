@@ -4,11 +4,16 @@ const campus = [
     {
       id:1,
       nome_campi: "Campus Nova Andradina",
-      imagem_url: "https://cdn2.novanews.com.br//uploads/rails_admin_content_builder/content_builder_image/image/32556/center_center_19"
+      imagem_url: "https://www.ifms.edu.br/imagens/imagens-noticias/abraco-pela-educacao/img_5497.jpg"
     },
     {
       id:2,
       nome_campi: "Campus Campo Grande",
+      imagem_url: "https://www.ifms.edu.br/imagens/imagens-noticias/abraco-pela-educacao/img_5497.jpg"
+    },
+    {
+      id:3,
+      nome_campi: "Campus Dourados",
       imagem_url: "https://www.ifms.edu.br/imagens/imagens-noticias/abraco-pela-educacao/img_5497.jpg"
     }
   ];

@@ -1,16 +1,16 @@
-:root {
-    --color-neutral-0: #000;
-    --color-neutral-10: #bb00ff;
-    --color-neutral-30: #252627;
-    --color-neutral-40: #ff00c8;
-    --color-neutral-50: #fff;
-    --color-neutral-60: #18191B;
-}
+    :root {
+        --color-neutral-0: #000;
+        --color-neutral-10: #bb00ff;
+        --color-neutral-30: #252627;
+        --color-neutral-40: #ff00c8;
+        --color-neutral-50: #fff;
+        --color-neutral-60: #18191B;
+    }
 
-html{
-    width: 100%;
-    height: 100%;
-}
+    html{
+        width: 100%;
+        height: 100%;
+    }
 
     *{
     font-family: 'arial';
@@ -105,19 +105,10 @@ html{
     .paginaPadrao{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
+        flex-direction: row;
         width: 100%;
      }
-
-    .amor{
-        background-color: #bb00ff;
-        width: 100%;
-    }
-
-    .imagemRota{
-        width: 100px;
-        height: 100px;
-    }
 
     /*Fim do CSS do meio*/
 
@@ -327,12 +318,56 @@ html{
 
     /*Fim do CSS do footer*/
     
+    /*Estilização da página do mapa*/
     .mapa iframe{
         width: 900px;
-        height: 640px;
-        margin: 20px 0px 400px 0px;
+        height: 460px;
+        margin: 20px 0px 0px 0px;
         filter: drop-shadow(5px 5px 5px #344955);
     }
-    
+    /*Fim da estilização da página do mapa*/
 
-    
+    .ama{
+        
+        background-color: #ff2992;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-bottom: 270px;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+    .ama h1{
+        color: white;
+    }
+    .amor{
+        background-color: var(--color-neutral-60);
+        width: 1500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .amor::before{
+        opacity: 0;
+    }
+    .amor2{
+        background-color: #f1e8f7;
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px 20px 10px 20px;
+        border-radius: 15px;
+    }
+    .amor2 h3{
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .imagemRota{
+        width: 700px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
