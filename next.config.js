@@ -5,7 +5,8 @@ const nextConfig = {
         domains:[
             "www.ifms.edu.br",
             "ead.ifms.edu.br",
-            "br.pinterest.com"
+            "br.pinterest.com",
+            "www.google.com.br"
         ]
     }
 }

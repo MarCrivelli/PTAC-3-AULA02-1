@@ -203,6 +203,7 @@
         list-style: none;
         width: 400px;
     }
+
     footer h2{
         padding: 0px 0px 9px 0px;
         font-weight: bolder;
@@ -367,7 +368,7 @@
         font-size: 30px;
     }
     .imagemRota{
-        width: 700px;
-        height: 600px;
+        width: 200px;
+        height: 200px;
         margin-bottom: 10px;
     }
