@@ -10,6 +10,22 @@ export default async function Imagens(){
                 <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
                 <h3>{campus.nome_campus}</h3>
             </div>
+            <div class="amor2">
+                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
+                <h3>{campus.nome_campus}</h3>
+            </div>
+            <div class="amor2">
+                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
+                <h3>{campus.nome_campus}</h3>
+            </div>
+            <div class="amor2">
+                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
+                <h3>{campus.nome_campus}</h3>
+            </div>
+            <div class="amor2">
+                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
+                <h3>{campus.nome_campus}</h3>
+            </div>
           </div>
           )}
            <h1>Imagens</h1>

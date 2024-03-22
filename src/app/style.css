@@ -108,6 +108,7 @@
         align-items: end;
         flex-direction: row;
         width: 100%;
+        height: auto;
      }
 
     /*Fim do CSS do meio*/
@@ -119,6 +120,8 @@
         color: var(--color-neutral-50);
         position: fixed;
         bottom: 0;
+        border-top: 8px solid #25d366;
+        margin-top: 20px;
     }
 
     .iconeDoFooter{
@@ -285,7 +288,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             margin-top: 1.5rem;
         }
 
@@ -327,7 +329,8 @@
         filter: drop-shadow(5px 5px 5px #344955);
     }
     /*Fim da estilização da página do mapa*/
-
+    
+    /*Estilização da página de imagens*/
     .ama{
         
         background-color: #ff2992;
@@ -344,31 +347,52 @@
     }
     .amor{
         background-color: var(--color-neutral-60);
-        width: 1500px;
+        max-width: 1500px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 15px;
+        border-radius: 0px;
     }
     .amor::before{
         opacity: 0;
     }
     .amor2{
-        background-color: #f1e8f7;
+        background-color: rgb(222, 222, 222);
         width: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: 20px;
         padding: 20px 20px 10px 20px;
-        border-radius: 15px;
+        border-radius: 5px;
+        box-shadow: 3px 5px 5px #ff2992;
     }
     .amor2 h3{
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 20px;
     }
     .imagemRota{
         width: 200px;
         height: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
+    } 
+    /*Fim da estilização da página de imagens*/
+
+    .fundoRegistro{
+        background: linear-gradient(180deg, #E27160, #DA5A63, #9F316A, #382A61, #0F2254, #081334); 
+        filter: blur(1px);
+        width: 1920px;
+        height: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registro{
+        filter: blur(-3px);
+        font-size: 40px;
+        color: #fff;
+        width: 500px;
+        height: 600px;
+        background-color: red;
     }
