@@ -4,7 +4,7 @@ export default function Menu(){
     return(
         <header>
           <div className="container">
-          <div style={{ backgroundColor: 'white', display: 'inline-block', border:'3px solid #25d366',borderRadius: '50%', height: '150px', width: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5px'}}>
+          <div style={{ backgroundColor: 'white', display: 'inline-block', border:'3px solid #bb00ff',borderRadius: '50%', height: '150px', width: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5px'}}>
             <Link href="https://www.ifms.edu.br">
               <Image
                 width={100}

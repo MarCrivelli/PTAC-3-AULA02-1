@@ -6,9 +6,6 @@ export default function Footer(){
         <footer>
             <div id="footerContent">
                <div id="footerContacts">
-               
-
-
                   <div id="footerSocialMedia">
 
                     <div style={{backgroundColor:'#F07C0F', borderRadius:'20px', padding:'50px', display: 'block', height: '130px', width: '460px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

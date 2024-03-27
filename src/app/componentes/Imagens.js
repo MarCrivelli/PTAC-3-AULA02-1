@@ -1,28 +1,17 @@
 import Image from "next/image";
+const url = "https://back-end-ifms-kappa.vercel.app/campi";
 export default async function Imagens(){
-    const resposta = await fetch("https://back-end-ifms.vercel.app/campi",{next:{revalidate: 3}});
+    const resposta = await fetch(url, {
+        cache: "no-cache",
+        method: "GET",
+        headers: {'Content-Type': 'application/json'}
+    });
     const campi = await resposta.json();
     return(
-        <main class="ama">
+        <main class="blocoNomeImagens">
             {campi.map((campus) =>
-          <div class="amor">
-            <div class="amor2">
-                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
-                <h3>{campus.nome_campus}</h3>
-            </div>
-            <div class="amor2">
-                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
-                <h3>{campus.nome_campus}</h3>
-            </div>
-            <div class="amor2">
-                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
-                <h3>{campus.nome_campus}</h3>
-            </div>
-            <div class="amor2">
-                <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
-                <h3>{campus.nome_campus}</h3>
-            </div>
-            <div class="amor2">
+          <div class="blocoImagens">
+            <div class="cardImagemCampus">
                 <Image width={100} height={100} class="imagemRota" src={campus.image_url}/>
                 <h3>{campus.nome_campus}</h3>
             </div>
